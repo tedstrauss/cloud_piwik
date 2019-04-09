@@ -15,7 +15,7 @@ if (!empty($url)) {
     if (isset($parseurl['port'])) {
       $url .= ':' . (string) $parseurl['port'];
     }
-    $policy = new OCP\AppFramework\Http\ContentSecurityPolicy();
+    /*$policy = new OCP\AppFramework\Http\ContentSecurityPolicy();
 
     if ($url !== false && array_key_exists('HTTP_HOST', $_SERVER)
         && $_SERVER['HTTP_HOST'] !== $url && !empty($url)) {
@@ -23,5 +23,5 @@ if (!empty($url)) {
         $policy->addAllowedImageDomain($url);
 
         \OC::$server->getContentSecurityPolicyManager()->addDefaultPolicy($policy);
-    }
+    }*/
 }
