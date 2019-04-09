@@ -6,7 +6,7 @@ if (!empty($url)) {
         'script',
         [
             'src' => \OC::$server->getURLGenerator()->linkToRoute('piwik.JavaScript.tracking'),
-            'nonce' => \OC::$server->getContentSecurityPolicyNonceManager()->getNonce(),
+            /*'nonce' => \OC::$server->getContentSecurityPolicyNonceManager()->getNonce(),*/
         ], ''
     );
 
