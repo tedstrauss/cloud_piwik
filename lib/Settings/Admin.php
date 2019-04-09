@@ -5,7 +5,7 @@ use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
 use OCP\Settings\ISettings;
 
-class Admin implements ISettings
+abstract class Admin implements ISettings
 {
 
     /** @var IConfig */
